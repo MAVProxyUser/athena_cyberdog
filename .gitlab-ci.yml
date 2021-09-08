@@ -1,0 +1,60 @@
+image: cr.d.xiaomi.net/athena/athena_x86_cross:3.0
+
+stages:
+  - build
+  - test
+
+variables:
+  GIT_SUBMODULE_STRATEGY: normal
+  GIT_DEPTH: 1
+  SETUP_BASH_FILE: /opt/ros2/foxy/local_setup.bash
+  CROSS_SETUP_BASH_FILE: /mnt/sdcard${SETUP_BASH_FILE}
+
+.before_script: &before_script
+  - git config --global url."https://${GIT_CI_TOKEN}@partner-gitlab.mioffice.cn/".insteadOf "https://partner-gitlab.mioffice.cn/"
+  - fusion-cli config --access-key ${FDS_AK} --secret-key ${FDS_SK}
+  - locale-gen en_US.UTF-8 && export LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+
+.limit: &limit
+  tags:
+    - group-runner
+
+build:
+  stage: build
+  <<: *limit
+  before_script: 
+    - *before_script
+    - source ${CROSS_SETUP_BASH_FILE}
+  script:
+    - make build && make upload-files && make tmp-upload
+
+build-full:
+  stage: build
+  <<: *limit
+  before_script: 
+    - *before_script
+    - source ${CROSS_SETUP_BASH_FILE}
+  script:
+    - make build-full && make upload-full-files && make tmp-full-upload
+
+test:
+  stage: test
+  image: cr.d.xiaomi.net/athena/athena_arm:2.6
+  <<: *limit
+  before_script: 
+    - *before_script
+    - source ${SETUP_BASH_FILE}
+    - export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+  script:
+    - make tmp-download && make test
+
+test-full:
+  stage: test
+  image: cr.d.xiaomi.net/athena/athena_arm:2.6
+  <<: *limit
+  before_script: 
+    - *before_script
+    - source ${SETUP_BASH_FILE}
+    - export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+  script:
+    - make tmp-full-download && make test-full
