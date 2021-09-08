@@ -1,7 +1,7 @@
 # Xiaomi CyberDog ROS 2(Athena)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange)](https://choosealicense.com/licenses/apache-2.0/)
-[![pipeline status](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/badges/master/pipeline.svg)](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/-/commits/master)
+[![pipeline status](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/badges/devel/pipeline.svg)](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/-/commits/devel)
 
 ## Introduction
 

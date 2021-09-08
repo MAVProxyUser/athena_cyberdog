@@ -16,7 +16,7 @@
 
 1. 下载[个人独立贡献者许可协议](https://cdn.cnbj2m.fds.api.mi-img.com/cyberdog-package/packages/doc_materials/cla_zh_en.pdf)
 2. 使用PDF软件签署协议，注意签名部分需要手写（电子签名即可）。
-3. 将签署完毕的协议文件发送至邮箱[cyberdog@xiaomi.com](mailto:cyberdog@xiaomi.com)
+3. 将签署完毕的协议文件发送至邮箱[mi-cyberdog@xiaomi.com](mailto:mi-cyberdog@xiaomi.com)
 
 ## 开发者签名认证
 
