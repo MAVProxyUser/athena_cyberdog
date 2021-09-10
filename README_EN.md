@@ -1,7 +1,7 @@
 # Xiaomi CyberDog ROS 2(Athena)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange)](https://choosealicense.com/licenses/apache-2.0/)
-[![pipeline status](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/badges/devel/pipeline.svg)](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/-/commits/devel)
+[![pipeline status](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/badges/master/pipeline.svg)](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/-/commits/master)
 
 ## Introduction
 
@@ -215,6 +215,7 @@ $ sudo systemctl restart cyberdog_automation.service
 ## Related Resources
 
 - [CyberDogAPP download link](http://cdn.cnbj1.fds.api.mi-img.com/ota-packages/apk/cyberdog_app.apk)
+- [Step file of CyberDog body](https://cdn.cnbj2m.fds.api.mi-img.com/cyberdog-package/packages/doc_materials/cyber_dog_body.stp)
 
 ## Contribute to CyberDog!
 
