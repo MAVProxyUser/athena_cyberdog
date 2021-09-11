@@ -125,14 +125,14 @@ $ cd ..
 2. 使用`--packages-up-to`编译（[确保source过ROS 2的环境变量](TBD)）
 
 ```
-$ colcon build --merge--install --packages-up-to athena_bringup
+$ colcon build --merge-install --packages-up-to athena_bringup
 ```
 
 或者，编译到指定目录，注意：如有需要请替换`/opt/ros2/cyberdog`的值为其他。
 
 ```
 $ export OUTPUT_DIR=/opt/ros2/cyberdog
-$ colcon build --merge--install --install-base $OUTPUT_DIR --packages-up-to athena_bringup
+$ colcon build --merge-install --install-base $OUTPUT_DIR --packages-up-to athena_bringup
 ```
 
 ### +=基础功能包
@@ -152,14 +152,14 @@ $ cd ..
 2. 直接编译所有的包（[确保source过ROS 2的环境变量](TBD)）
 
 ```
-$ colcon build --merge--install
+$ colcon build --merge-install
 ```
 
 或者，编译到指定目录，注意：如有需要请替换`/opt/ros2/cyberdog`的值为其他。
 
 ```
 $ export OUTPUT_DIR=/opt/ros2/cyberdog
-$ colcon build --merge--install --install-base $OUTPUT_DIR
+$ colcon build --merge-install --install-base $OUTPUT_DIR
 ```
 
 ### +=扩展功能包
@@ -180,14 +180,14 @@ $ cd ..
 2. 直接编译所有的包（[确保source过ROS 2的环境变量](TBD)）
 
 ```
-$ colcon build --merge--install
+$ colcon build --merge-install
 ```
 
 或者，编译到指定目录，注意：如有需要请替换`/opt/ros2/cyberdog`的值为其他。
 
 ```
 $ export OUTPUT_DIR=/opt/ros2/cyberdog
-$ colcon build --merge--install --install-base $OUTPUT_DIR
+$ colcon build --merge-install --install-base $OUTPUT_DIR
 ```
 
 ### 通用的部署方式

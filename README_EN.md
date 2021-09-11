@@ -125,14 +125,14 @@ $ cd ..
 2. Use `--packages-up-to` to compile（[Ensure the ROS 2 environment is sourced](TBD)）
 
 ```
-$ colcon build --merge--install --packages-up-to athena_bringup
+$ colcon build --merge-install --packages-up-to athena_bringup
 ```
 
 Or, compile to the specified directory. Note: If necessary, please replace `/opt/ros2/cyberdog` with your path.
 
 ```
 $ export OUTPUT_DIR=/opt/ros2/cyberdog
-$ colcon build --merge--install --install-base $OUTPUT_DIR --packages-up-to athena_bringup
+$ colcon build --merge-install --install-base $OUTPUT_DIR --packages-up-to athena_bringup
 ```
 
 ### +=Basic package
@@ -152,14 +152,14 @@ $ cd ..
 2. Compile all packages ([Ensure the ROS 2 environment is sourced](TBD))
 
 ```
-$ colcon build --merge--install
+$ colcon build --merge-install
 ```
 
 Or, compile to the specified directory. Note: If necessary, please replace `/opt/ros2/cyberdog` with your path.
 
 ```
 $ export OUTPUT_DIR=/opt/ros2/cyberdog
-$ colcon build --merge--install --install-base $OUTPUT_DIR
+$ colcon build --merge-install --install-base $OUTPUT_DIR
 ```
 
 ### +=Extended package
@@ -180,14 +180,14 @@ $ cd ..
 2. Compile all packages ([Ensure the ROS 2 environment is sourced](TBD))
 
 ```
-$ colcon build --merge--install
+$ colcon build --merge-install
 ```
 
 Or, compile to the specified directory. Note: If necessary, please replace `/opt/ros2/cyberdog` with your path.
 
 ```
 $ export OUTPUT_DIR=/opt/ros2/cyberdog
-$ colcon build --merge--install --install-base $OUTPUT_DIR
+$ colcon build --merge-install --install-base $OUTPUT_DIR
 ```
 
 ### General deployment method
