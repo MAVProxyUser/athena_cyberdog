@@ -15,7 +15,7 @@ Most of the robot applications are implemented based on ROS 2. As shown in the f
 graph LR
 	AndroidAPP---|Bluetooth|ROS2_Bluetooth_Bridge
 	AndroidAPP---|WiFi&GRPC|ROS2_GRPC_Bridge
-	AndroidAPP---|WiFi&RTPS|ROS2_Live_Stream
+	AndroidAPP---|WiFi&RTSP|ROS2_Live_Stream
 	
 	ROS2_GRPC_Bridge---DDS
 	ROS2_Live_Stream---|SHM|ROS2_Camera
