@@ -2,7 +2,7 @@
 [[step]]
 type     = "transition"
 height   = [0.3]
-duration = [1000.0]
+duration = [300.0]
 
 [[step]]
 type     = "locomotion"
