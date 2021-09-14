@@ -126,7 +126,7 @@
 
 #### **运动参数配置**
 
-数据格式：参考[motion_msgs](../athena_msgs/motion_msgs/README.md)
+数据格式：参考[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 运动参数修改目前仅支持身体高度和足底高度的动态修改。
 
@@ -139,7 +139,7 @@
 
 #### **模式切换**
 
-数据格式：参考[motion_msgs](../athena_msgs/motion_msgs/README.md)
+数据格式：参考[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 合法请求：具备较新时间戳的模式。
 - 较新时间戳表示此次切换请求的时间戳比上一次模式切换的时间戳要新，一般取同时区的当前系统时间即可。
@@ -157,7 +157,7 @@
 
 #### **步态切换**
 
-数据格式：参考[motion_msgs](../athena_msgs/motion_msgs/README.md)
+数据格式：参考[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 合法请求：具备合法动机，且具备较新时间戳的步态
 - 合法动机指的是，`motivation`取值必须符合预设值`athena_utils::GaitChangePriority`
@@ -180,7 +180,7 @@
 
 #### **动作执行**
 
-数据格式：参考[motion_msgs](../athena_msgs/motion_msgs/README.md)
+数据格式：参考[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 合法请求：具备较新时间戳的动作及其参数（如果需要）
 - 较新时间戳表示此次执行请求的时间戳比上一次动作执行时间戳要新，一般取同时区的当前系统时间即可。
@@ -206,7 +206,7 @@
 
 #### **行动指令**
 
-数据格式：参考[motion_msgs](../athena_msgs/motion_msgs/README.md)
+数据格式：参考[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 合法请求：具备恰当source id和指定frame id，且具备较新时间戳的行动指令
 - 恰当source id：在不同的模式下，决策端接受的行动指令会通过source id的值进行分辨。如下所示，宏定义取自motion_msgs/msg/SE3VelocityCMD.msg。

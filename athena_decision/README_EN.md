@@ -125,7 +125,7 @@ Since the robot has only one main body, the following `mode check`, `gait check`
 
 #### **Motion Parameters Configuration**
 
-Data format: reference[motion_msgs](../athena_msgs/motion_msgs/README.md)
+Data format: reference[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 Motion parameter modification currently only supports dynamic modification of body height and plantar height.
 
@@ -138,7 +138,7 @@ Legitimate request: motion parameter with a newer time stamp.
 
 #### **Mode Checking**
 
-Data format: reference[motion_msgs](../athena_msgs/motion_msgs/README.md)
+Data format: reference[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 Legitimate request: a mode with a newer timestamp.
 - The newer timestamp means that the timestamp of this switching request is newer than the timestamp of the last mode switching. Generally, the current system time in the same zone can be used.
@@ -156,7 +156,7 @@ Result:
 
 #### **Gait Checking**
 
-Data format: reference[motion_msgs](../athena_msgs/motion_msgs/README.md)
+Data format: reference[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 Legitimate request: a gait with a legal motivation and a newer timestamp
 - Legal motivation means that the value of `motivation` must conform to the default value `athena_utils::GaitChangePriority`
@@ -179,7 +179,7 @@ Result：
 
 #### **Order Execution**
 
-Data format: reference[motion_msgs](../athena_msgs/motion_msgs/README.md)
+Data format: reference[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 Legitimate request: Order with a newer timestamp and its parameters (if required)
 - The newer timestamp means that the timestamp of this execution request is newer than the timestamp of the last order execution. Generally, the current system time in the same time zone can be used.
@@ -205,7 +205,7 @@ Result：
 
 #### **Movement Instruction**
 
-Data format: reference[motion_msgs](../athena_msgs/motion_msgs/README.md)
+Data format: reference[motion_msgs](../athena_interfaces/motion_msgs/README.md)
 
 Legitimate request: Movement instruction with appropriate source id and specified frame id, and with a newer timestamp
 - Appropriate source id: In different modes, the movement command accepted by the decision-making end will be distinguished by the value of source id. As shown below, the macro definition is taken from motion_msgs/msg/SE3VelocityCMD.msg.
