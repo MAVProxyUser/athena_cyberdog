@@ -3,6 +3,8 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange)](https://choosealicense.com/licenses/apache-2.0/)
 [![pipeline status](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/badges/master/pipeline.svg)](https://partner-gitlab.mioffice.cn/cyberdog/athena_cyberdog/-/commits/master)
 
+> 该仓库目前已经迁移至 [cyberdog_ros2](https://github.com/MiRoboticsLab/cyberdog_ros2)，本仓库不再更新。
+
 ## 简介
 
 本项目是铁蛋的ROS 2应用程序的主仓，支持单独构建和与其他辅仓库共同构建。辅仓库可参考[相关项目](#相关项目)了解更多。
